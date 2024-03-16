@@ -1,13 +1,22 @@
 <html>
-    <body>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    
+
+    <div class="form">
+        
         <form action='/predict' method="POST">
+            <h1>Predict the Iris Class!</h1>
             Sepal Length: <input type='text' name='sepal_length'><br>
             Sepal Width: <input type='text' name='sepal_width'><br>
             Petal Length: <input type='text' name='petal_length'><br>
             Petal Width: <input type='text' name='petal_width'><br>
             Class: {{result}} <br>
-                                <!-- value on the button -->
+            <!-- value on the button -->
             <input type='submit' value='Predict'>
-        </form>
-    </body>
+    </div>
+    </form>
+</body>
+
 </html>
