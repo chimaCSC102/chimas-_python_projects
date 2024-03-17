@@ -1,0 +1,33 @@
+<html>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    
+
+    <div class="form">
+        
+        <form action='/predict' method="POST">
+            <h1>Predict the chance of having a coronary heart disease!</h1>
+            Male: <input type='text' name='male'><br>
+            Age: <input type='text' name='age'><br>
+            Education: <input type='text' name='education'><br>
+            Current Smoker: <input type='text' name='smoker'><br>
+            Cigs per day: <input type='text' name='cigsPerDay'><br>
+            BPMeds: <input type='text' name='bpm'><br>
+            Prevalent Strokes: <input type='text' name='strokes'><br>
+            Prevalent Hypertension: <input type='text' name='hypertension'><br>
+            Diabetes: <input type='text' name='diabetes'><br>
+            Total Chol: <input type='text' name='chol'><br>
+            Sys BP: <input type='text' name='bp'><br>
+            Dia BP: <input type='text' name='dia'><br>
+            BMI: <input type='text' name='bmi'><br>
+            Heart Rate: <input type='text' name='heartRate'><br>
+            Glucose: <input type='text' name='glucose'><br>
+            Coronary Heart Disease chance: {{result}} <br>
+            <!-- value on the button -->
+            <input type='submit' value='Predict'>
+    </div>
+    </form>
+</body>
+
+</html>
